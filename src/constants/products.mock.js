@@ -135,7 +135,7 @@ export const MOCK_PRODUCTS = [
 		id: '12',
 		name: 'Rambuttan - 500gm',
 		category: ProductCategoryEnum.FRUIT.name,
-		price: 160,
+		price: 175,
 		unit: UnitEnum.GRAMS.name,
 		stock: 5,
 		image:
@@ -160,5 +160,15 @@ export const MOCK_PRODUCTS = [
 		stock: 5,
 		image:
 			'https://img.freepik.com/premium-photo/high-angle-view-chili-peppers-white-background_1048944-11225421.jpg?w=2000',
+	},
+	{
+		id: '15',
+		name: 'Kottukonam ripe mangoes',
+		category: ProductCategoryEnum.FRUIT.name,
+		price: 180,
+		unit: UnitEnum.KILOGRAM.name,
+		stock: 5,
+		image:
+			'https://veliyathgarden.com/cdn/shop/products/Kottukonam1_1445x.jpg?v=1662964674',
 	},
 ];
