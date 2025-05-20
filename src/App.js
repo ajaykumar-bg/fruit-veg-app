@@ -170,7 +170,6 @@ function App() {
 			/>
 			<main className='container mx-auto px-4 py-6'>{renderContent()}</main>
 
-			{/* Product Dialog */}
 			{open && (
 				<ProductDialog
 					open={open}
