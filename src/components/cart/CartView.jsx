@@ -105,7 +105,9 @@ function CartItem({ item, updateQuantity, onRemove }) {
 					</div>
 				</div>
 			</td>
-			<td className='px-6 py-4 whitespace-nowrap'>${item.price.toFixed(2)}</td>
+			<td className='px-6 py-4 whitespace-nowrap'>
+				Rs. {item.price.toFixed(2)}
+			</td>
 			<td className='px-6 py-4 whitespace-nowrap'>
 				<div className='flex items-center'>
 					<button
@@ -124,7 +126,7 @@ function CartItem({ item, updateQuantity, onRemove }) {
 				</div>
 			</td>
 			<td className='px-6 py-4 whitespace-nowrap'>
-				${(item.price * item.quantity).toFixed(2)}
+				Rs.{(item.price * item.quantity).toFixed(2)}
 			</td>
 			<td className='px-6 py-4 whitespace-nowrap'>
 				<button
@@ -145,7 +147,7 @@ function CartSummary({ total, onCheckout }) {
 				<h3 className='text-xl font-semibold mb-4'>Cart Summary</h3>
 				<div className='flex justify-between mb-4'>
 					<span>Total:</span>
-					<span className='text-xl font-bold'>${total}</span>
+					<span className='text-xl font-bold'>Rs.{total}</span>
 				</div>
 				<button
 					className='w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none'

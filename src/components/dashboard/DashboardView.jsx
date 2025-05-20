@@ -21,7 +21,7 @@ function DashboardView({ products, cart, calculateTotal }) {
 					<p className='mb-2'>
 						Items in Cart: {cart.reduce((sum, item) => sum + item.quantity, 0)}
 					</p>
-					<p className='mb-2'>Cart Value: ${calculateTotal()}</p>
+					<p className='mb-2'>Cart Value: Rs. {calculateTotal()}</p>
 				</div>
 				<LowStockTable products={products} />
 			</div>
@@ -40,6 +40,9 @@ function LowStockTable({ products }) {
 					<thead className='bg-gray-50'>
 						<tr>
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
+								Image
+							</th>
+							<th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
 								Name
 							</th>
 							<th className='px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider'>
@@ -56,6 +59,13 @@ function LowStockTable({ products }) {
 					<tbody className='bg-white divide-y divide-gray-200'>
 						{lowStockItems.map((product) => (
 							<tr key={product.id}>
+								<td className='px-6 py-4 whitespace-nowrap'>
+									<img
+										src={product.image}
+										alt={product.name}
+										className='w-16 h-16 object-cover rounded'
+									/>
+								</td>
 								<td className='px-6 py-4 whitespace-nowrap'>{product.name}</td>
 								<td className='px-6 py-4 whitespace-nowrap'>
 									{product.category}

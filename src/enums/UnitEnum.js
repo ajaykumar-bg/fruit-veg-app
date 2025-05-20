@@ -1,6 +1,8 @@
 export default class UnitEnum {
 	static KILOGRAM = new UnitEnum('kilogram', 'kg', 'Kilogram');
 
+	static GRAMS = new UnitEnum('gram', 'gm', 'Gram');
+
 	static PIECE = new UnitEnum('piece', 'piece', 'Piece');
 
 	static BUNCH = new UnitEnum('bunch', 'bunch', 'Bunch');
