@@ -32,7 +32,7 @@ function ProductCard({ product, onAddToCart }) {
 				</p>
 				<div className='flex justify-between items-center'>
 					<p className='text-xl font-bold'>
-						${product.price.toFixed(2)}/{product.unit}
+						Rs. {product.price.toFixed(2)}/{product.unit}
 					</p>
 					<button
 						className={`px-3 py-1 rounded-md ${

@@ -72,7 +72,7 @@ function ProductRow({ product, onEdit, onDelete }) {
 			<td className='px-6 py-4 whitespace-nowrap'>{product.name}</td>
 			<td className='px-6 py-4 whitespace-nowrap'>{product.category}</td>
 			<td className='px-6 py-4 whitespace-nowrap'>
-				${product.price.toFixed(2)}
+				Rs. {product.price.toFixed(2)}
 			</td>
 			<td className='px-6 py-4 whitespace-nowrap'>{product.unit}</td>
 			<td className='px-6 py-4 whitespace-nowrap'>{product.stock}</td>

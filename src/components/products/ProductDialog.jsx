@@ -70,7 +70,7 @@ function ProductDialog({
 									Price
 								</label>
 								<div className='relative'>
-									<span className='absolute left-3 top-2'>$</span>
+									<span className='absolute left-1 top-2'>Rs</span>
 									<input
 										type='number'
 										name='price'
