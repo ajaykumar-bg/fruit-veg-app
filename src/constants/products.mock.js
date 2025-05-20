@@ -1,10 +1,30 @@
+import { ProductCategoryEnum, UnitEnum } from '../enums';
+
 const PLACEHOLDER_IMAGE_URL = 'https://placehold.co/300x200/orange/white';
+
+export const PRODUCT_CATEGORIES = [
+	{
+		value: ProductCategoryEnum.FRUIT.name,
+		text: ProductCategoryEnum.FRUIT.desc,
+	},
+	{
+		value: ProductCategoryEnum.VEGETABLE.name,
+		text: ProductCategoryEnum.VEGETABLE.desc,
+	},
+];
+
+export const UNITS = [
+	{ value: UnitEnum.KILOGRAM.name, text: UnitEnum.KILOGRAM.label },
+	{ value: UnitEnum.PIECE.name, text: UnitEnum.PIECE.label },
+	{ value: UnitEnum.BUNCH.name, text: UnitEnum.BUNCH.label },
+	{ value: UnitEnum.DOZEN.name, text: UnitEnum.DOZEN.label },
+];
 
 export const MOCK_PRODUCTS = [
 	{
 		id: '1',
 		name: 'Apple',
-		category: 'fruit',
+		category: ProductCategoryEnum.FRUIT.name,
 		price: 2.5,
 		unit: 'kg',
 		stock: 100,
@@ -14,7 +34,7 @@ export const MOCK_PRODUCTS = [
 	{
 		id: '2',
 		name: 'Tomato',
-		category: 'vegetable',
+		category: ProductCategoryEnum.VEGETABLE.name,
 		price: 3.2,
 		unit: 'kg',
 		stock: 80,
@@ -24,7 +44,7 @@ export const MOCK_PRODUCTS = [
 	{
 		id: '3',
 		name: 'Banana',
-		category: 'fruit',
+		category: ProductCategoryEnum.FRUIT.name,
 		price: 1.8,
 		unit: 'bunch',
 		stock: 50,
@@ -34,7 +54,7 @@ export const MOCK_PRODUCTS = [
 	{
 		id: '4',
 		name: 'Carrot',
-		category: 'vegetable',
+		category: ProductCategoryEnum.VEGETABLE.name,
 		price: 1.5,
 		unit: 'kg',
 		stock: 120,
@@ -44,7 +64,7 @@ export const MOCK_PRODUCTS = [
 	{
 		id: '5',
 		name: 'Lettuce',
-		category: 'vegetable',
+		category: ProductCategoryEnum.VEGETABLE.name,
 		price: 2.0,
 		unit: 'piece',
 		stock: 45,
@@ -54,11 +74,21 @@ export const MOCK_PRODUCTS = [
 	{
 		id: '6',
 		name: 'Rasakadali Banana',
-		category: 'fruit',
+		category: ProductCategoryEnum.FRUIT.name,
 		price: 60,
 		unit: 'Kg',
 		stock: 50,
 		image:
 			'https://img.freepik.com/free-photo/top-view-bunch-bananas-isolated-black-wood_141793-7454.jpg?t=st=1747760045~exp=1747763645~hmac=9fd0f740bccb33137b1ae9703a73a81594890f18abd788dffd27f74731affc34&w=2000',
+	},
+	{
+		id: '7',
+		name: 'Pumpkin',
+		category: ProductCategoryEnum.VEGETABLE.name,
+		price: 40,
+		unit: 'Kg',
+		stock: 3,
+		image:
+			'https://img.freepik.com/premium-photo/pumpkin-white-wall_29402-1120.jpg?w=2000',
 	},
 ];

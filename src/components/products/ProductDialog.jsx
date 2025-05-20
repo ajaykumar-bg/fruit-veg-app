@@ -1,4 +1,5 @@
 import { Camera } from 'lucide-react';
+import { PRODUCT_CATEGORIES, UNITS } from '../../constants/products.mock';
 
 function ProductDialog({
 	open,
@@ -43,8 +44,11 @@ function ProductDialog({
 									onChange={handleInputChange}
 									className='w-full p-2 border border-gray-300 rounded-md'
 								>
-									<option value='fruit'>Fruit</option>
-									<option value='vegetable'>Vegetable</option>
+									{PRODUCT_CATEGORIES.map((cat) => (
+										<option key={cat.value} value={cat.value}>
+											{cat.text}
+										</option>
+									))}
 								</select>
 							</div>
 							<div>
@@ -57,10 +61,11 @@ function ProductDialog({
 									onChange={handleInputChange}
 									className='w-full p-2 border border-gray-300 rounded-md'
 								>
-									<option value='kg'>Kilogram (kg)</option>
-									<option value='piece'>Piece</option>
-									<option value='bunch'>Bunch</option>
-									<option value='dozen'>Dozen</option>
+									{UNITS.map((unitType) => (
+										<option key={unitType.value} value={unitType.value}>
+											{unitType.text}
+										</option>
+									))}
 								</select>
 							</div>
 						</div>
