@@ -20,6 +20,17 @@ export const UNITS = [
 	{ value: UnitEnum.DOZEN.name, text: UnitEnum.DOZEN.label },
 ];
 
+export const BANANA_TYPES = [
+	'Nendra',
+	'Palayamthodan',
+	'Kappa',
+	'Robesta',
+	'Rasakathali',
+	'Poovan',
+];
+
+export const MANGO_TYPES = ['Alphonso', 'Kottukonam', 'Mulgova'];
+
 export const MOCK_PRODUCTS = [
 	{
 		id: '1',
